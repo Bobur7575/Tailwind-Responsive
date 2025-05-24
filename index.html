@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom scrollbar (optional, for aesthetics) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2d3748; /* dark:bg-gray-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* dark:bg-gray-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2c5282; /* dark:bg-blue-700 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans">
+
+    <header class="bg-gray-900 py-6 px-4 md:px-8 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Portfolio</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-300 hover:text-cyan-400 transition duration-300">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-cyan-400 transition duration-300">About</a>
+                <a href="#services" class="text-gray-300 hover:text-cyan-400 transition duration-300">Services</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-cyan-400 transition duration-300">Portfolio</a>
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-cyan-400 rounded transition duration-300">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-cyan-400 rounded transition duration-300">About</a>
+            <a href="#services" class="block px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-cyan-400 rounded transition duration-300">Services</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-cyan-400 rounded transition duration-300">Portfolio</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-cyan-400 rounded transition duration-300">Contact</a>
+        </div>
+    </header>
+    
+    <section id="about" class="bg-gray-900 py-16 md:py-24 px-4 md:px-8">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <img src="Bg'atan.png" alt="">
+            <div class="text-center md:text-left">
+                <p class="text-lg text-white-400">Hello It's Me</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-white my-4">John Kendric</h2>
+                <p class="text-xl md:text-2xl text-white mb-4">And I'm a <span class="text-cyan-400">Frontend Developer</span></p>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum ducimus labore maiores ea, repudiandae aliquam! Voluptatibus labo.
+                </p>
+                <div class="flex space-x-4 mb-8 justify-center md:justify-start">
+                    <a href="#" class="text-cyan-400 border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 rounded-full p-3 transition duration-300">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-cyan-400 border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 rounded-full p-3 transition duration-300">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-cyan-400 border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 rounded-full p-3 transition duration-300">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-cyan-400 border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 rounded-full p-3 transition duration-300">
+                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    </a>
+                </div>
+                <a href="#" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-full inline-block transition duration-300 shadow-lg 
+filter: drop-shadow(var(--drop-shadow-xs))  fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500/50 ..." >Download CV</a>
+            </div>  
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-gray-800 px-4 md:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-4">Our <span class="text-cyan-400">Services</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl hover:shadow-cyan-500/30 transition-shadow duration-300 text-center">
+                    <div class="text-cyan-400 text-5xl mb-6 mx-auto w-fit">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Web Development</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur.
+                    </p>
+                    <a href="#" class="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-6 rounded-md inline-block transition duration-300">Read More</a>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl hover:shadow-cyan-500/30 transition-shadow duration-300 text-center">
+                    <div class="text-cyan-400 text-5xl mb-6 mx-auto w-fit">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Graphic Design</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur.
+                    </p>
+                    <a href="#" class="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-6 rounded-md inline-block transition duration-300">Read More</a>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg shadow-xl hover:shadow-cyan-500/30 transition-shadow duration-300 text-center">
+                    <div class="text-cyan-400 text-5xl mb-6 mx-auto w-fit">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Digital Marketing</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur.
+                    </p>
+                    <a href="#" class="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-6 rounded-md inline-block transition duration-300">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-16 md:py-24 bg-gray-900 px-4 md:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-4">Latest <span class="text-cyan-400">Project</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-800 h-64 rounded-lg shadow-lg hover:shadow-cyan-500/30 transition-shadow duration-300 flex items-center justify-center">
+                    <p class=""><img src="Og'a.png" alt=""></p>
+                </div>
+                <div class="bg-gray-800 h-64 rounded-lg shadow-lg hover:shadow-cyan-500/30 transition-shadow duration-300 flex items-center justify-center">
+                    <p class=""> <img src="Og'a.png" alt=""> </p>
+                </div>
+                <div class="bg-gray-800 h-64 rounded-lg shadow-lg hover:shadow-cyan-500/30 transition-shadow duration-300 flex items-center justify-center">
+                    <p class=""> <img src="Og'a.png" alt=""> </p>
+                </div>
+                <div class="bg-gray-800 h-64 rounded-lg shadow-lg hover:shadow-cyan-500/30 transition-shadow duration-300 flex items-center justify-center">
+                    <p class=""> <img src="Og'a.png" alt=""> </p>
+                </div>
+                <div class="bg-gray-800 h-64 rounded-lg shadow-lg hover:shadow-cyan-500/30 transition-shadow duration-300 flex items-center justify-center">
+                    <p class=""> <img src="Og'a.png" alt=""> </p>
+                </div>
+                <div class="bg-gray-800 h-64 rounded-lg shadow-lg hover:shadow-cyan-500/30 transition-shadow duration-300 flex items-center justify-center">
+                    <p class=""> <img src="Og'a.png" alt=""> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-gray-800 px-4 md:px-8">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Contact <span class="text-cyan-400">Me!</span></h2>
+            <form action="#" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="full-name" class="sr-only">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" placeholder="Full Name" class="w-full bg-gray-700 text-gray-300 placeholder-gray-500 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-300">
+                    </div>
+                    <div>
+                        <label for="email-address" class="sr-only">Email Address</label>
+                        <input type="email" name="email-address" id="email-address" placeholder="Email Address" class="w-full bg-gray-700 text-gray-300 placeholder-gray-500 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-300">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="phone-number" class="sr-only">Mobile Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="Mobile Number" class="w-full bg-gray-700 text-gray-300 placeholder-gray-500 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-300">
+                    </div>
+                    <div>
+                        <label for="email-subject" class="sr-only">Email Subject</label>
+                        <input type="text" name="email-subject" id="email-subject" placeholder="Email Subject" class="w-full bg-gray-700 text-gray-300 placeholder-gray-500 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-300">
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="sr-only">Your Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" class="w-full bg-gray-700 text-gray-300 placeholder-gray-500 border border-gray-600 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-300"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-10 rounded-md transition duration-300 shadow-lg">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8 text-center border-t border-gray-700">
+        <p class="text-gray-500">&copy; Copyright 2025 by <span class="text-cyan-400">Codetend</span> | All Rights Reserved.</p>
+        <a href="#" id="scrollTop" class="fixed bottom-8 right-8 bg-cyan-500 hover:bg-cyan-600 text-white p-3 rounded-full shadow-lg transition-opacity duration-300 opacity-0">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = mobileMenu.querySelectorAll('a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.querySelector('i').classList.remove('fa-times');
+                mobileMenuButton.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Scroll to top button
+        const scrollTopButton = document.getElementById('scrollTop');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopButton.style.opacity = "1";
+            } else {
+                scrollTopButton.style.opacity = "0";
+            }
+        };
+        scrollTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return; // Ignore simple '#' links for buttons etc.
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
